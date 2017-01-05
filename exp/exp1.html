@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1" user-scalable="no">
+	<title>Specific Gravity</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="../assets/css/style1.css">
+</head>
+<body>
+	<section id="splashh">
+		<div class="conteiner">
+			<div class="main-container">
+				<div class="text-vertical-center">
+					<h2>Determination of specific gravity</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="aim">
+		<div class="container text-center">
+			<h3>[1]Aim: To determine specific gravity of a coarse grained soil sample by pycnometer method</h3>
+		</div>
+	</section>
+
+	<section id="apparatus">
+		<div class="container">
+			<h2>Apparatus:</h2>
+			<ul>
+				<li>Pycnometer with a conical cap screwed at its top</li>
+				<li>Balance</li>
+				<li>Wash bottle with deaired, distilled water</li>
+				<li>Glass rod, about 150mm and 3mm diameter</li>
+				<li>Thermometer with 0 to 50<sup>o</sup>C range</li>
+				<li>Thermostatically controlled oven</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="procedure">
+		<div class="container">
+			<h2>Procedure:</h2>
+			<ol>
+				<li>
+					Clean the pycnometer and dry it. Find the mass of Pycnometer with its cap and washer, accurate to 0.1g
+				</li>
+				<li>
+					Introduce about 400g of over dried coarse grained soil into the pycnometer. Record the mass of the pycnometer with its cap and washer along with the soil (M2).
+				</li>
+				<li>Fill the pycnometer with distilled water to half its height, and mix it thoroughly with the soil using glass rod. Keep the entire system aside for 4hrs. At the end of this period, fill the pycnometer with water up to the top of the conical cap. Dry the pycnometer from outside and record its mass (M3).</li>
+				<li>Clean the pycnometer thoroughly. Fill it with distilled water upto top of conical cap. Dry the pycnometer from outside and record its mass to nearest to 0.2g (M4).</li>
+				<li>
+					Repeat the steps 2 and 3 thrice.
+				</li>
+				<li>Calculate specific gravity of soil at room temperature as well as at 27<sup>o</sup>C</li>
+			</ol>
+		</div>
+	</section>
+
+	<section id="calculator">
+		<div class="container text-center">
+			<h2>Specific gravity calculator</h2>
+			<tr>
+				<td>
+					<h3>Mass of pycnometer:</h3>
+					<input type="text" name="m1" id="m1">
+				</td><br>
+				<td>
+					<h3>Mass of Pycnometer + Soil:</h3>
+					<input type="text" name="m2" id="m2">
+				</td><br>
+				<td>
+					<h3>Mass of Pycnometer + Soil + Water:</h3>
+					<input type="text" name="m3" id="m3">
+				</td><br>
+				<td>
+					<h3>Mass of Pycnometer + Water:</h3>
+					<input type="text" name="m4" id="m4">
+				</td><br>
+			</tr>
+			<input type="submit" name="submit" value="Calculate" class="button" onclick="calculator1()" id="click">
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function calculator1(){
+			var a= document.getElementById('m1').value;
+			var b= document.getElementById('m2').value;
+			var c= document.getElementById('m3').value;
+			var d= document.getElementById('m4').value;
+			var e= (b-a);
+			var f= e-(c-d);
+			var g= e/f;
+			var h= g.toFixed(2);
+			alert('The specific gravity of given sample is '+f+'');
+			return;
+		}
+	</script>
+</body>
+</html>

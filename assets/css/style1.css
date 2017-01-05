@@ -1,0 +1,73 @@
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+#splashh{
+	width: 100%;
+	height: 100vh;
+	background: rgb(25,52,65);
+	text-align: center;
+	color: white;
+}
+.main-container{
+	width: 100%;
+	height: 100vh;
+	display: table;
+}
+.text-vertical-center{
+	width: 100%;
+	height: 100vh;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+#aim{
+	width: 100%;
+	height: auto;
+	background: rgb(62,96,111);
+	color: white;
+}
+#aim h3{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	line-height: 32px;
+}
+#apparatus{
+	background: rgb(145,170,157);
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#apparatus ul li{
+	font-size: 25px;
+}	
+#procedure{
+	background: rgb(209,219,189);
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+#procedure ol li{
+	font-size: 25px;
+}	
+#calculator{
+	width: 100%;
+	height: 100%;
+	background-position: white;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+#calculator h3, #calculator input{
+	display: inline-block;
+}
+#calculator h2{
+	color: rgb(25,52,65);
+}
+#calculator .button{
+	margin-top: 20px;
+	background: rgb(25,52,65);
+	color: white;
+	border: 1px solid rgb(25,52,65); 
+}
+input{
+	text-align: center;
+	font-weight: bold;
+}
